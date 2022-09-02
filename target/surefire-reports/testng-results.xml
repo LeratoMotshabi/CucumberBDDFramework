@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-02T10:00:22 SAST" name="Surefire suite" finished-at="2022-09-02T10:02:18 SAST" duration-ms="116366">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner@c267ef4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-09-02T10:00:22 SAST" name="Surefire test" finished-at="2022-09-02T10:02:18 SAST" duration-ms="116366">
+      <class name="runner.runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:00:22 SAST" name="setUpClass" finished-at="2022-09-02T10:00:24 SAST" duration-ms="2352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79a68657]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:00:24 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-02T10:01:15 SAST" duration-ms="50834" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that new customer can be added successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["New customer"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cannot find email address expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cannot find email address expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at StepsDefinition.newCustomerSteps.customer_unique_email_address_should_reflect_in_customers_list(newCustomerSteps.java:110)
+at ✽.customer unique email address should reflect in customers list(file:///C:/Users/lerato.motshabi/NewSpace/CucumberFramework.nopCommerce/src/test/resources/features/addNewCustomerSteps.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:01:15 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-02T10:01:39 SAST" duration-ms="24110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that customer details can be edited successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["New customer"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:01:39 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-02T10:01:53 SAST" duration-ms="14291" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can login with valid email address and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[You are not in admin Page expected [Dashboard / nopCommerce administration12345] but found [Dashboard / nopCommerce administration]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: You are not in admin Page expected [Dashboard / nopCommerce administration12345] but found [Dashboard / nopCommerce administration]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at StepsDefinition.loginSteps.user_should_be_in_admin_page(loginSteps.java:48)
+at ✽.user should be in admin page(file:///C:/Users/lerato.motshabi/NewSpace/CucumberFramework.nopCommerce/src/test/resources/features/loginSteps.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:01:53 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-02T10:02:03 SAST" duration-ms="9545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot login with invalid email address and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:02:03 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-02T10:02:14 SAST" duration-ms="10910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot login with valid email address and invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runner@c267ef4]" started-at="2022-09-02T10:02:14 SAST" name="tearDownClass" finished-at="2022-09-02T10:02:18 SAST" duration-ms="4213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.runner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

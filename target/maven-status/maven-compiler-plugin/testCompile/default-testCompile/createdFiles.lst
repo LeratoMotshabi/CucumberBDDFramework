@@ -1,0 +1,11 @@
+Utilities\WaitHelper.class
+Utilities\propertiesManager.class
+StepsDefinition\newCustomerSteps.class
+PageObject\customersPage.class
+Utilities\EmailManager.class
+ActionDriver\action.class
+Hooks\Hooks.class
+PageObject\loginPage.class
+Utilities\EmailManager$1.class
+runner\runner.class
+StepsDefinition\loginSteps.class

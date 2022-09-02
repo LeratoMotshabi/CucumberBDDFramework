@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: runner.runner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 118.234 s <<< FAILURE! - in runner.runner
+runner.runner.runScenario["Verify that new customer can be added successfully", "New customer"](1)  Time elapsed: 50.842 s  <<< FAILURE!
+java.lang.AssertionError: Cannot find email address expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at StepsDefinition.newCustomerSteps.customer_unique_email_address_should_reflect_in_customers_list(newCustomerSteps.java:110)
+	at ✽.customer unique email address should reflect in customers list(file:///C:/Users/lerato.motshabi/NewSpace/CucumberFramework.nopCommerce/src/test/resources/features/addNewCustomerSteps.feature:34)
+
+runner.runner.runScenario["Verify user can login with valid email address and password", "login page"](3)  Time elapsed: 14.291 s  <<< FAILURE!
+java.lang.AssertionError: You are not in admin Page expected [Dashboard / nopCommerce administration12345] but found [Dashboard / nopCommerce administration]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at StepsDefinition.loginSteps.user_should_be_in_admin_page(loginSteps.java:48)
+	at ✽.user should be in admin page(file:///C:/Users/lerato.motshabi/NewSpace/CucumberFramework.nopCommerce/src/test/resources/features/loginSteps.feature:29)
+
